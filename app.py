@@ -4,7 +4,9 @@ import streamlit as st
 from transformers import pipeline
 
 # Load GenAI model
-generator = pipeline("text-generation", model="tiiuae/falcon-7b-instruct")
+##generator = pipeline("text-generation", model="tiiuae/falcon-7b-instruct")
+generator = pipeline("text-generation", model="sshleifer/tiny-gpt2")
+
 
 # Function to get stock data
 def get_stock_data(ticker):
